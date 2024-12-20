@@ -44,7 +44,7 @@ def admission_report_generation(config):
 
     case_report=case_report_load(config)
     if config["N_TESTING_ROW"]:
-        case_report=case_report[0:int(config["N_TESTING_ROW"])]
+        case_report=case_report[0:config["N_TESTING_ROW"]]
     elif config["N_TESTING_ROW"]=="all":
         case_report
     else:

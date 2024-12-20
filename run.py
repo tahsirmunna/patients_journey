@@ -12,7 +12,7 @@ with open(json_file_path, 'r') as json_file:
 
 
 print("\nReport Gereration started...\n")
-#generator(config)
+generator(config)
 print("\nGeneration Finished!\n")
 
 

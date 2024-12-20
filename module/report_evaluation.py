@@ -25,7 +25,7 @@ def evaluator(config):
 
     # Handling a subset of data based on the configuration
     if config["N_TESTING_ROW"]:
-        gen_data = gen_data[0:int(config["N_TESTING_ROW"])]  # Use only the specified number of rows
+        gen_data = gen_data[0:config["N_TESTING_ROW"]]  # Use only the specified number of rows
     elif config["N_TESTING_ROW"] == "all":
         gen_data  # Use all rows
     else:

@@ -7,9 +7,9 @@
   "GENERATED_REPORT_TYPE":"all",
   "SCORING":"yes",
   "PT_CLASSIFYING":"NO",
-  "CLUSTERING":"no",
-  "N_CLUSTER":"4",
-  "N_TESTING_ROW":"5",
+  "CLUSTERING":"yes",
+  "N_CLUSTER":"10",
+  "N_TESTING_ROW":"all",
   "OUTPUT_PATH":"/home/munna/cn_coding/patients_journey/patients_journey_pipeline/output/",
   "GPU":"YES",
   "API_KEY":"AIzaSyCl-yHa54OdEIPKLY_U4b1-QTUaGjOFJdk"
