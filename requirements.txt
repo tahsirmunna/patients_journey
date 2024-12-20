@@ -1,0 +1,10 @@
+pandas==2.1.1
+google-generativeai==0.3.0
+torch==2.1.0
+transformers==4.35.0
+scikit-learn==1.4.0
+numpy==1.26.0
+bert-score==0.4.0
+sacrebleu==3.1.0
+unidecode==1.4.0
+
