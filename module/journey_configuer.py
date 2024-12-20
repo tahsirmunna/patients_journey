@@ -43,12 +43,12 @@ def admission_report_generation(config):
 
 
     case_report=case_report_load(config)
-    if config["N_TESTING_ROW"]:
-        case_report=case_report[0:config["N_TESTING_ROW"]]
-    elif config["N_TESTING_ROW"]=="all":
-        case_report
+    if isinstance(config["N_TESTING_ROW"], int):# Check if it's an integer
+        case_report=case_report[0:config["N_TESTING_ROW"]]# Use only the specified number of rows
+    elif config["N_TESTING_ROW"]=="all":# If it's the string "all"
+        case_report # Use all rows
     else:
-        case_report
+        case_report # Default case: no filtering
 
     print("\n number of row:",len(case_report))
 

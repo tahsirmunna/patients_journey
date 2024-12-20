@@ -24,14 +24,13 @@ def evaluator(config):
     gen_data = pd.read_csv(config["CASE_REPORT_CSV_PATH"][:-4] + "_new.csv")
 
     # Handling a subset of data based on the configuration
-    if config["N_TESTING_ROW"]:
+    if isinstance(config["N_TESTING_ROW"], int):  # Check if it's an integer
         gen_data = gen_data[0:config["N_TESTING_ROW"]]  # Use only the specified number of rows
-    elif config["N_TESTING_ROW"] == "all":
+    elif config["N_TESTING_ROW"] == "all":  # If it's the string "all"
         gen_data  # Use all rows
     else:
         gen_data  # Default case: no filtering
 
-    print("\n number of rows:", len(gen_data))
     
     # Initialize the NER pipeline using a pre-trained model
     print("NER model:", config["NER_MODEL"])
