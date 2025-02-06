@@ -118,7 +118,7 @@ def evaluator(config):
         results = []
 
         # Iterate over the rows of the data to perform evaluations
-        for index, row in gen_data[0:5].iterrows():  # Limit processing to 5 rows for demonstration
+        for index, row in gen_data.iterrows():  # Limit processing to 5 rows for demonstration
             try:
                 print("Processing NER calculation")
                 # Extract named entities from various text columns
