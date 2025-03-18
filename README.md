@@ -4,7 +4,7 @@ A patient's interaction with a hospital, from admission to discharge, is typical
 
 ## 📂 Repository Structure
 
-📦 report-generation ├── 📂 data # Raw data used for generating reports and final generated data in one csv file ├── 📂 example_generation # One example generation with English translation ├── 📂 exploratory_results # Intermediate results and insights ├── 📂 module # Core modules for data processing and analysis ├── 📂 output # Final generated reports ├── 📄 Prompt.pdf # Prompt used for generating reports ├── 📄 README.md # Repository documentation ├── 📄 config.json # Configuration file for setting up the pipeline ├── 📄 requirements.txt # Dependencies required to run the project └── 📄 run.py # Main script to execute the report generation pipeline
+📦 report-generation ├── 📂 data # Raw data used for generating reports and final generated data in one csv file ├── 📂 example_generation # One example generation with English translation ├── 📂 module # Core modules for data processing and analysis ├── 📂 output # Final generated reports ├── 📄 Prompt.pdf # Prompt used for generating reports ├── 📄 README.md # Repository documentation ├── 📄 config.json # Configuration file for setting up the pipeline ├── 📄 requirements.txt # Dependencies required to run the project └── 📄 run.py # Main script to execute the report generation pipeline
 
 
 
@@ -35,8 +35,6 @@ Modify the config.json file to customize parameters for data processing and repo
 `data/:` Contains raw datasets used in the pipeline and generated all reports in one .csv file.
 
 `example_generation/:` Includes one example of the generation with English translation.
-
-`exploratory_results/:` Stores results from exploratory data analysis including a table of the most frequent terms and the number of terms in the generated reports, topic distribution plots, and word cloud plots to visualize the most frequent terms in the generated reports.
 
 `module/:` Contains core functions for data processing.
 
